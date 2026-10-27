@@ -23,9 +23,9 @@ FIX() {
 }
 
 #修改argon主题颜色
-FIX "theme-argon" "$PACKAGE_PATH/luci-app-argon-config" sed -i \
-	"s/ primary '.*'/ primary '#5e72e4'/g; s/ blur '.*'/ blur '0'/g; s/ transparency '.*'/ transparency '0.3'/g; s/ online_wallpaper '.*'/ online_wallpaper 'none'/g" \
-	"$PACKAGE_PATH/luci-app-argon-config/root/etc/config/argon"
+FIX "theme-argon" "$PACKAGE_PATH/luci-theme-argon" sed -i \
+	"s/ primary '.*'/ primary '#5e72e4'/g; s/ blur '.*'/ blur '1'/g; s/ transparency '.*'/ transparency '0.3'/g; s/ online_wallpaper '.*'/ online_wallpaper 'none'/g" \
+	"$PACKAGE_PATH/luci-theme-argon/root/etc/config/argon"
 
 #修改aurora菜单式样
 FIX "theme-aurora" "$PACKAGE_PATH/luci-app-aurora-config" find \
